@@ -1,0 +1,134 @@
+<style>
+        
+     
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f8fb; 
+            color: #333;
+            text-align: center;
+        
+
+        header {
+            background-color: #6ec1e4; 
+            color: white;
+            padding: 20px 0;
+            font-size: 2rem;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .content {
+            margin: 30px auto;
+            text-align: left;
+            max-width: 1000px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #4a90e2; 
+        }
+
+        p {
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: square;
+            padding-left: 40px;
+            color: #666;
+        }
+
+        .cubo-container {
+            width: 300px;
+            height: 300px;
+            margin: 40px auto;
+            perspective: 800px;
+        }
+
+        .cubo {
+            width: 200px;
+            height: 200px;
+            transform-style: preserve-3d;
+            animation: rotarCubo 5s infinite linear;
+            margin: 0 auto;
+        }
+
+        .cubo .cara {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .cubo .frente {
+            transform: translateZ(100px);
+            background-color: #ff7f50; 
+        }
+
+        .cubo .atras {
+            transform: rotateY(180deg) translateZ(100px);
+            background-color: #ffa07a; 
+        }
+
+        .cubo .izquierda {
+            transform: rotateY(-90deg) translateZ(100px);
+            background-color: #98fb98; 
+        }
+
+        .cubo .derecha {
+            transform: rotateY(90deg) translateZ(100px);
+            background-color: #f0e68c; 
+        }
+
+        .cubo .arriba {
+            transform: rotateX(90deg) translateZ(100px);
+            background-color: #add8e6; 
+        }
+
+        .cubo .abajo {
+            transform: rotateX(-90deg) translateZ(100px);
+            background-color: #d8bfd8; 
+        }
+
+        @keyframes rotarCubo {
+            0% {
+                transform: rotateX(0deg) rotateY(0deg);
+            }
+
+            100% {
+                transform: rotateX(360deg) rotateY(360deg);
+            }
+        }
+
+        footer {
+            background-color: #6ec1e4; 
+            color: white;
+            padding: 15px 0;
+            font-size: 1rem;
+            box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        
+        img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            color: #4a90e2;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
